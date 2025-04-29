@@ -1,0 +1,246 @@
+/* Base Styles */
+.gei-about-page {
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.gei-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.gei-header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.gei-logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.gei-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.gei-hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.gei-hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* About Section */
+.gei-about-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.gei-about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.gei-about-text {
+    flex: 1;
+}
+
+.gei-about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2563eb;
+}
+
+.gei-about-text p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.gei-about-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gei-about-image img {
+    width: 150%;
+    height: auto;
+    display: block;
+}
+
+/* Team Section */
+.gei-team-section {
+    padding: 80px 0;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.gei-team-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2563eb;
+}
+
+.gei-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gei-team-member {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.gei-team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.gei-team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border: 4px solid #2563eb;
+}
+
+.gei-team-member h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.gei-team-member p {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.gei-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gei-social-links a {
+    color: #2563eb;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.gei-social-links a:hover {
+    color: #1e40af;
+    transform: translateY(-2px);
+}
+
+/* Responsive Team Section */
+@media (max-width: 768px) {
+    .gei-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gei-team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Values Section */
+.gei-values-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.gei-values-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2563eb;
+}
+
+.gei-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.gei-value-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.gei-value-card:hover {
+    transform: translateY(-10px);
+}
+
+.gei-value-card i {
+    font-size: 40px;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.gei-value-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.gei-footer {
+    background: #1e293b;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gei-about-content {
+        flex-direction: column;
+    }
+    
+    .gei-hero h1 {
+        font-size: 32px;
+    }
+    
+    .gei-hero p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gei-hero {
+        padding: 60px 0;
+    }
+    
+    .gei-hero h1 {
+        font-size: 28px;
+    }
+}
